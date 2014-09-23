@@ -1,0 +1,32 @@
+<template name="leaderboardView">
+
+  <div class="leaderboardView">
+      <div class="playerView">
+      <span class="labelName">Name</span>
+      <span class="label">Matches</span>
+      <span class="label">Goals</span>
+      <span class="label">Passes</span>
+      <span class="label">HDM</span>
+      </div>
+    {{#each players}}
+      {{> playerView}}
+    {{/each}}
+  </div>
+
+</template>
+
+<template name="playerView">
+  <div class="playerView">
+    <span class="name">{{name}}</span>
+    <span class="score">{{matches}}
+    </span>
+    <span class="score">{{goals}}
+    </span>
+    <span class="score">{{passes}}
+    </span>
+    <span class="score">{{hdm}}
+    </span>
+  </div>
+</template>
+
+

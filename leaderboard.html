@@ -1,0 +1,54 @@
+<template name="leaderboard">
+
+    <div class="leaderboard">
+      <div class="player">
+      <span class="labelName">Name</span>
+      <span class="label">Matches</span>
+      <span class="label">Goals</span>
+      <span class="label">Passes</span>
+      <span class="label">HDM</span>
+      </div>
+    {{#each players}}
+      {{> player}}
+    {{/each}}
+  </div>
+
+</template>
+
+<template name="player">
+  <div class="player {{selected}}">
+    <span class="name">{{name}}</span>
+    <span class="score">{{matches}}
+      {{#if selected}}
+      <div class="controller">
+      <img width="16" src="up.png" class="matchesPlus"/>
+      <img width="16" src="down.png" class="matchesMinus"/>
+      </div>
+      {{/if}}
+    </span>
+    <span class="score">{{goals}}
+          {{#if selected}}
+      <div class="controller">
+          <img width="16" src="up.png" class="goalsPlus"/>
+          <img width="16" src="down.png" class="goalsMinus"/>
+      </div>
+      {{/if}}
+    </span>
+    <span class="score">{{passes}}
+          {{#if selected}}
+      <div class="controller">
+          <img width="16" src="up.png" class="passesPlus"/>
+          <img width="16" src="down.png" class="passesMinus"/>
+      </div>
+      {{/if}}
+    </span>
+    <span class="score">{{hdm}}
+
+          {{#if selected}}
+      <div class="controller">
+          <img width="16" src="up.png" class="hdmPlus"/>
+          <img width="16" src="down.png" class="hdmMinus"/>
+      </div>
+      {{/if}}</span>
+  </div>
+</template>

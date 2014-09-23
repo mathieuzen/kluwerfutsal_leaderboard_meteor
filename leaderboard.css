@@ -1,0 +1,97 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    margin: 50px 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-color: #001d56;
+    margin: auto;
+}
+
+#outer {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.player, .playerView {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.player .name, .playerView .name {
+    display: inline-block;
+    width: 30%;
+    font-size: 1.75em;
+    color: #f5f5f5;
+}
+
+.player .score, .playerView .score {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #777;
+}
+
+.player.selected {
+    background-color: #daa520;
+}
+
+.player.selected .score {
+    color: black;
+}
+
+.details, .none {
+    font-weight: bold;
+    font-size: 2em;
+    border-style: dashed none none none;
+    border-color: #ccc;
+    border-width: 4px;
+    margin: 50px 10px;
+    padding: 10px 0px;
+}
+
+.none {
+    color: #777;
+}
+
+.inc {
+  cursor: pointer;
+}
+
+.label{
+    display: inline-block;
+    width: 15%;
+    color: #FF3333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.labelName{
+    display: inline-block;
+    color: #FF3333;
+    font-weight: bold;
+    width: 30%;
+}
+
+.name{
+    display: inline-block;
+    width: 30%;
+}
+
+.matchesPlus, .matchesMinus, .goalsPlus, .goalsMinus, .passesPlus, .passesMinus, .hdmPlus, .hdmMinus{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.controller{
+    display: inline-block;
+    float: right;
+    margin: 2px 0 0px 20px;
+    position: absolute;
+}
