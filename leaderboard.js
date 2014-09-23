@@ -95,6 +95,6 @@ if (Meteor.isServer) {
 }
 
 Router.map(function() {
-    this.route('leaderboardView');
+    this.route('leaderboardView/test');
     this.route('leaderboard');
 });
