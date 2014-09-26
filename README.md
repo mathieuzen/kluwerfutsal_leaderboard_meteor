@@ -7,4 +7,4 @@ Il s'agit d'une application web permettant d'augmenter les statistiques en temps
 
 Demo
 ====
-http://kluwerfutsal.meteor.com/leaderboard/
+http://kluwerfutsal.meteor.com
